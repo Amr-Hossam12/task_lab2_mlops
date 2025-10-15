@@ -44,8 +44,8 @@ test_df = pd.concat([X_test_final, y_test.reset_index(drop=True)], axis=1)
 
 #Step 5: Save encoded CSVs
 os.makedirs("data", exist_ok=True)
-train_df.to_csv("data/train_encoded.csv", index=False)
-test_df.to_csv("data/test_encoded.csv", index=False)
-df.to_csv("data/data_raw.csv", index=False)
+train_df.to_csv("data/train.csv", index=False)
+test_df.to_csv("data/test.csv", index=False)
+df.to_csv("data/raw_data.csv", index=False)
 
 print("Saved data/train_encoded.csv and data/test_encoded.csv")

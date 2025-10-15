@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 # Load test data and model 
-test_df = pd.read_csv('data/test_encoded.csv')
+test_df = pd.read_csv('data/test.csv')
 X_test = test_df.drop('left', axis=1)
 y_test = test_df['left']
 model = joblib.load('models/model.pkl')
