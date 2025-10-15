@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
 # Load training data
-train_df = pd.read_csv('data/train_encoded.csv')
+train_df = pd.read_csv('data/train.csv')
 X_train = train_df.drop('left', axis=1)
 y_train = train_df['left']
 
@@ -15,4 +15,4 @@ model.fit(X_train, y_train)
 # Save model
 os.makedirs('models', exist_ok=True)
 joblib.dump(model, 'models/model.pkl')
-print("✅ Decision Tree model saved to models/model.pkl")
+print("Decision Tree model saved to models/model.pkl")
