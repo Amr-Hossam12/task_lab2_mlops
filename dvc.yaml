@@ -4,7 +4,7 @@ stages:
     deps:
       - preprocess.py
     outs:
-      - data/data_raw.csv
+      - data/raw_data.csv
       - data/train.csv
       - data/test.csv
 
